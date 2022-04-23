@@ -3,6 +3,9 @@
 //Problem::Given a grid of size n* m(n is number of rowsand m is number of columns grid has) consisting of '0's(Water) and '1's(Land).Find the number of islands.
 //Note: An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically or diagonally i.e., in all 8 directions.
 
+//Solution::For each 1 found in the matrix increment the number of islands by 1 then call dfs on that node. Set the value in the matrix to 0 to indicate it has been 
+//visited. (If no changes are allowed to the matrix create another matrix to keep track of what has been visited). Then call dfs on all the adjacent nodes. 
+
 #include <iostream>
 #include <vector>
 using namespace std;
